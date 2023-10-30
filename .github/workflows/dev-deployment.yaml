@@ -1,0 +1,21 @@
+name: Deploy to railway DEV Environtment
+
+on: 
+  push:
+    branches:
+      - "develop"
+
+jobs: 
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: action/checkout@v2
+
+      - name: Install NodeJS 20.x
+        uses: action/setup-node@v1
+        with:
+          node-version: 20.x
+
+      
