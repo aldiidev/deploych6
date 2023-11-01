@@ -10,7 +10,7 @@ app.use(morgan('dev'))
 app.get('/', (req, res)=>{
     return res.json({
         status: true,
-        message: 'hii develop',
+        message: 'hii develop gg',
         err:null,
         data: null
     })
