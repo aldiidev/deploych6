@@ -21,3 +21,5 @@ CREATE UNIQUE INDEX "UserProfile_idUser_key" ON "UserProfile"("idUser");
 
 -- AddForeignKey
 ALTER TABLE "UserProfile" ADD CONSTRAINT "UserProfile_idUser_fkey" FOREIGN KEY ("idUser") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+DROP TABLE "Bank"
