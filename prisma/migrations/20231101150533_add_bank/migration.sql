@@ -1,3 +1,5 @@
+-- Drop Existing Table
+DROP TABLE "Bank";
 -- CreateTable
 CREATE TABLE "Bank" (
     "id" SERIAL NOT NULL,
