@@ -25,4 +25,10 @@ model UserProfile {
   birth_date      String
   profile_picture String
   user            User    @relation(fields: [idUser], references: [id])
-} 
+}
+
+model Bank {
+  id    Int @id @default(autoincrement())
+  name  String
+  Balance String
+}
